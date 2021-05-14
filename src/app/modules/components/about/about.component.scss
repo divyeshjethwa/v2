@@ -1,0 +1,63 @@
+@import "../../../../assets/styles/partials/colors";
+
+.aboutme {
+  width: 100% !important;
+  &__title {
+    span {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 16px;
+      color: $secondary;
+    }
+    font-family: $calibre;
+    font-size: 20px;
+    color: $text;
+  }
+  &__content {
+    &-description {
+      // width: 60% !important;
+      color: $text;
+      p {
+        font-family: $calibre;
+        margin: 0px 0px 15px;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        overflow: hidden;
+        padding: 0px;
+        margin: 20px 0px 0px;
+        list-style: none;
+      }
+
+      li {
+        padding-left: 1em;
+        text-indent: -1em;
+        margin-bottom: 10px;
+      }
+
+      li:before {
+        color: $secondary;
+        content: "‣";
+        padding-right: 5px;
+      }
+    }
+    &-image {
+      // width: 30% !important;
+      img {
+        border-radius: 12px;
+        /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+        filter: gray; /* IE5+ */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        -webkit-transition: all 0.8s ease-in-out;
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+      }
+
+      img:hover {
+        filter: none;
+        -webkit-filter: grayscale(0);
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+      }
+    }
+  }
+}

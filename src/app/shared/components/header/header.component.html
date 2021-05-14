@@ -1,0 +1,57 @@
+<mat-toolbar id="header"
+             class="toolbar mat-typography"
+             color="primary"
+             fxLayout="row"
+             fxLayoutAlign="space-between center">
+    <div class="toolbar__logo animated fadeIn hide-on-init"
+         (click)="reloadPage()">
+        <svg id="logo"
+             width="39"
+             height="50"
+             viewBox="0 0 79 90"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M40.5002 2.26804C39.8813 1.91066 39.1188 1.91066 38.4999 2.26804L2.9999 22.768C2.38118 23.1253 2.00005 23.7855 2.00005 24.5V65.5C2.00005 66.2145 2.38118 66.8747 2.9999 67.232L38.4999 87.732C39.1188 88.0893 39.8813 88.0893 40.5002 87.732L76.0002 67.232C76.6189 66.8747 77 66.2145 77 65.5V24.5C77 23.7855 76.6189 23.1253 76.0002 22.768L40.5002 2.26804Z"
+                  stroke="#FF9900"
+                  stroke-width="4"
+                  stroke-linejoin="round" />
+            <path d="M33.6133 54.7617H37.4023C40.6706 54.7617 43.1576 53.9089 44.8633 52.2031C46.569 50.4844 47.4219 47.9844 47.4219 44.7031C47.4219 41.1875 46.543 38.6354 44.7852 37.0469C43.0273 35.4453 40.3776 34.6445 36.8359 34.6445H33.6133V54.7617ZM28.3203 59V30.3867H36.6016C39.1016 30.3867 41.3411 30.6732 43.3203 31.2461C45.2995 31.819 46.9987 32.6849 48.418 33.8438C49.8503 34.9896 50.944 36.474 51.6992 38.2969C52.4674 40.1068 52.8516 42.2031 52.8516 44.5859C52.8516 49.2083 51.4583 52.7695 48.6719 55.2695C45.8854 57.7565 42.0247 59 37.0898 59H28.3203Z"
+                  fill="#FF9900" />
+        </svg>
+    </div>
+    <div class="toolbar__menu"
+         fxLayout="row nowrap"
+         fxLayoutAlign="center center"
+         fxLayoutGap="50px"
+         fxShow="true"
+         fxHide.lt-md="true">
+        <ol class="toolbar__menu--list"
+            fxLayout="row"
+            fxLayoutAlign="start center">
+            <li class="toolbar__menu--list-item hide-on-init mat-body"
+                *ngFor="let item of navArr"
+                animateOnScroll
+                animationName="animated fadeInDown {{item.delay}}">
+                <a pageScroll
+                   [pageScrollEasing]="customEasing"
+                   href="{{item.id}}">{{item.title}}</a>
+            </li>
+        </ol>
+        <div class="toolbar__menu--btn hide-on-init mat-body"
+             animateOnScroll
+             animationName="animated fadeInDown delay-5">
+            <a href="/assets/files/resume.pdf"
+               target="__blank"
+               fxLayoutAlign="center center"><span>Resume</span></a>
+        </div>
+    </div>
+    <button mat-icon-button
+            class="toolbar__hamburger hide-on-init"
+            animateOnScroll
+            animationName="animated fadeInDown delay-1"
+            (click)="emitTogglerEvent()"
+            fxShow="true"
+            fxHide.gt-sm="true">
+        <mat-icon>menu</mat-icon>
+    </button>
+</mat-toolbar>

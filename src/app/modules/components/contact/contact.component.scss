@@ -1,0 +1,46 @@
+@import "../../../../assets/styles/partials/colors";
+
+.contactme {
+  width: 100%;
+  &__title {
+    span {
+      font-family: $courier-new;
+      font-size: 16px;
+      color: $secondary;
+    }
+    font-family: $courier-new;
+    font-size: 18px;
+    color: $secondary;
+  }
+  &__subtitle {
+    font-size: 50px;
+    margin: 0px;
+    font-family: $calibre;
+    margin-bottom: 20px;
+    color: $text;
+  }
+  &__content {
+    width: 60%;
+    font-family: $calibre;
+    color: rgb(136, 146, 176);
+    font-size: 17px;
+    margin: 0px 0px 15px;
+  }
+  &__btn {
+    height: 60px;
+    margin-top: 50px;
+    width: 170px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid $secondary;
+    a {
+      font-family: $courier-new;
+
+      color: $secondary !important;
+      text-decoration: none;
+    }
+  }
+  &__btn:hover {
+    background-color: $primary-light !important;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../../assets/styles/partials/colors";
+
+.experience {
+  h1 {
+    font-size: 60px;
+    color: $text;
+    margin-bottom: 0px !important;
+  }
+  p {
+    font-size: 16px;
+    color: $text-light;
+  }
+}

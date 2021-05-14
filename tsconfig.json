@@ -12,6 +12,9 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
@@ -19,7 +22,27 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@interfaces/*": [
+        "./src/app/core/interfaces/*"
+      ],
+      "@configs/*": [
+        "./src/app/core/configs/*"
+      ],
+      "@services/*": [
+        "./src/app/core/services/*"
+      ],
+      "@interceptors/*": [
+        "./src/app/core/interceptors/*"
+      ],
+      "@app/*": [
+        "./src/app/*"
+      ],
+      "@env/*": [
+        "./src/environments/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

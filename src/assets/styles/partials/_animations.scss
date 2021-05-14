@@ -1,0 +1,64 @@
+/*
+ * File: _animations.scss
+ * Project: v1
+ * File Created: Thursday, 27th February 2020 10:32:34 am
+ * Author: Divyesh Jethwa
+ * -----
+ * Last Modified: Saturday, 29th February 2020 6:22:46 am
+ * Modified By: Divyesh Jethwa <divyesh.jeth@gmail.com>
+ * -----
+ */
+
+.animated {
+  visibility: visible !important;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.hide-on-init {
+  visibility: hidden;
+}
+
+.delay-p25 {
+  animation-delay: 0.25s;
+}
+.delay-p5 {
+  animation-delay: 0.5s;
+}
+.delay-p9 {
+  animation-delay: 0.9s;
+}
+.delay-1 {
+  animation-delay: 2.55s + 0.25s;
+}
+.delay-2 {
+  animation-delay: 2.55s +0.35s;
+}
+.delay-3 {
+  animation-delay: 2.55s + 0.45s;
+}
+.delay-4 {
+  animation-delay: 2.55s + 0.55s;
+}
+.delay-5 {
+  animation-delay: 2.55s + 0.65s;
+}
+.delay-6 {
+  animation-delay: 2.55s + 0.75s;
+}
+.delay-7 {
+  animation-delay: 2.55s + 0.85s;
+}
+.delay-8 {
+  animation-delay: 2.55s + 0.95s;
+}
+.delay-9 {
+  animation-delay: 2.55s + 1.05s;
+}
+.delay-10 {
+  animation-delay: 2.55s + 1.15s;
+}
+.delay-11 {
+  animation-delay: 2.55s + 1.25s;
+}

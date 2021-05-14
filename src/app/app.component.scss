@@ -1,0 +1,143 @@
+@import "../assets/styles/partials/colors";
+
+.sidenav {
+  width: 250px !important;
+  max-width: 300px !important;
+  background-color: inherit !important;
+  position: fixed !important;
+  .mat-drawer-inner-container {
+    height: 100%;
+    overflow: auto;
+    width: 250px !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  &__menu {
+    width: 100%;
+    height: 100%;
+    &--close {
+      background: $primary;
+      mat-icon {
+        color: $secondary;
+      }
+    }
+    &--list {
+      margin: 2rem 0rem !important;
+      list-style-type: none;
+      padding: 0px !important;
+      width: fit-content;
+      a {
+        text-decoration: none;
+        color: $text;
+      }
+      a:hover {
+        color: $secondary;
+      }
+      &-item {
+        &-special {
+          color: $secondary;
+        }
+        margin: 1.5rem 0rem !important;
+        width: fit-content;
+      }
+    }
+
+    &--btn {
+      height: 40px;
+      width: 100px;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 1px solid $secondary;
+      a {
+        width: fit-content;
+        margin: 0px 0px;
+        padding: 0.7rem 1.3rem;
+        color: $secondary !important;
+      }
+    }
+    &--btn:hover {
+      background-color: $primary-light !important;
+    }
+  }
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // animation: zoomOut 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) 2s;
+  transform-origin: center left;
+  // transform-box: view-box;
+}
+#logo path:nth-child(1) {
+  stroke-dasharray: 258px;
+  stroke-dashoffset: 258px;
+  animation: draw 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+}
+
+#logo path:nth-child(2) {
+  fill-opacity: 0;
+  animation: fadeIn 1s ease-in forwards 1s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    fill-opacity: 0;
+  }
+
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes rotateOut {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-color: $primary;
+  transition: opacity 0.5s ease;
+}
+.preloader-finish {
+  opacity: 0;
+  pointer-events: none;
+}

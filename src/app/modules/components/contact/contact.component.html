@@ -1,0 +1,16 @@
+<div class="contactme hide-on-init"
+     animateOnScroll
+     animationName="animated fadeIn delay-p25"
+     fxLayout="column"
+     fxLayoutAlign="center center">
+    <h3 class="contactme__title"><span>IV.</span>&nbsp; {{data.title}}</h3>
+    <h1 class="contactme__subtitle"
+        [ngStyle.lt-sm]="{'font-size': '35px'}">{{data.subtitle}}</h1>
+    <p class="contactme__content"
+       [ngStyle.lt-sm]="{'width': '100%'}">{{data.content}}</p>
+    <div class="contactme__btn hide-on-init"
+         animateOnScroll
+         animationName="animated tada delay-p5"
+         fxLayoutAlign="center center">
+        <a href="mailto:divyesh.jeth@gmail.com">{{data.button}}</a>
+    </div>

@@ -1,0 +1,17 @@
+@import "../../../../assets/styles/partials/colors";
+.main {
+  padding: 0px 15%;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    padding: 125px 0px;
+    max-width: 1000px;
+  }
+}
+.animated {
+  visibility: visible !important;
+}
+.hide-on-init {
+  visibility: hidden;
+}

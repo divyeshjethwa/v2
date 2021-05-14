@@ -1,0 +1,74 @@
+@import "../../../../assets/styles/partials/colors";
+
+:host {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.active {
+  height: 75px !important;
+  box-shadow: 0 0 20px $primary-shadow;
+}
+
+// Has 3 child elements - logo, menu and hamburger
+.toolbar {
+  height: 100px;
+  width: 100%;
+  padding: 0px 50px;
+  transition-duration: 0.2s;
+  //----------------logo--------------------//
+  &__logo {
+    cursor: pointer;
+    width: 39px !important;
+    height: 50px !important;
+  }
+  //-----------------menu-------------------//
+  // Has 2 child elements - list and btn
+  &__menu {
+    &--list {
+      padding: 0px !important;
+      margin: 0px !important;
+      list-style-type: upper-roman;
+      &-item {
+        a:hover {
+          color: $secondary;
+        }
+        a {
+          color: $text;
+        }
+        font-family: $courier-new;
+        font-size: $font-small;
+        margin: 0px 35px 0px 35px !important;
+        color: $secondary;
+      }
+    }
+    &--btn {
+      height: 40px;
+      width: 82px;
+      margin-left: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 1px solid $secondary;
+      a {
+        width: fit-content;
+        margin: 0px 0px;
+        padding: 0.7rem 1rem;
+        font-size: $font-small;
+        color: $secondary !important;
+      }
+    }
+    &--btn:hover {
+      background-color: $primary-light !important;
+    }
+  }
+  //-----------------hamburger-------------------//
+  // Only visible in smaller screens
+  &__hamburger {
+    background: $primary;
+    mat-icon {
+      color: $secondary;
+    }
+  }
+}

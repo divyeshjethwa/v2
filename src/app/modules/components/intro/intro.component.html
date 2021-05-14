@@ -1,0 +1,29 @@
+<div class="introduction">
+    <h1 class="introduction__title hide-on-init"
+        [ngStyle.lt-sm]="{'font-size': '15px'}"
+        animateOnScroll
+        animationName="animated fadeInUp delay-7">{{data.header}} </h1>
+    <h2 class="introduction__name hide-on-init"
+        [ngStyle.lt-sm]="{'font-size': '35px'}"
+        [ngStyle.lt-md]="{'font-size': '50px'}"
+        animateOnScroll
+        animationName="animated fadeInUp delay-8">{{data.name}} </h2>
+    <h3 class="introduction__tagline hide-on-init"
+        [ngStyle.lt-sm]="{'font-size': '35px'}"
+        [ngStyle.lt-md]="{'font-size': '50px'}"
+        animateOnScroll
+        animationName="animated fadeInUp delay-9">{{data.tagline}} </h3>
+    <div class="introduction__about hide-on-init"
+         [ngStyle.lt-sm]="{'width': '100%'}"
+         animateOnScroll
+         animationName="animated fadeInUp delay-10">
+        <p>{{data.about}}
+        </p>
+    </div>
+    <div class="introduction__btn hide-on-init"
+         animateOnScroll
+         animationName="animated fadeInUp delay-11"
+         fxLayoutAlign="center center">
+        <a href="mailto:divyesh.jeth@gmail.com">{{data.getInTouch}}</a>
+    </div>
+</div>

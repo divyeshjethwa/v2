@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./assets/styles/partials/custom";
+@import "./assets/styles/partials/animations";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: $primary;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

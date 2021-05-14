@@ -1,0 +1,54 @@
+@import "../../../../assets/styles/partials/colors";
+
+.introduction {
+  padding: 50px 0px 0px 0px;
+  margin: 0px !important;
+
+  &__title {
+    margin: 0px 0px 20px 3px;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: $courier-new;
+    color: $secondary;
+  }
+
+  &__name {
+    font-size: 60px;
+    font-family: $calibre;
+    margin: 0px;
+    color: $text;
+  }
+
+  &__tagline {
+    font-size: 60px;
+    font-family: $calibre;
+    color: $text-light;
+    margin: 0px;
+  }
+
+  &__about {
+    margin-top: 25px;
+    max-width: 500px;
+    width: 70%;
+    p {
+      font-family: $calibre;
+      color: $text-light;
+      font-size: 17px;
+      margin: 0px 0px 15px;
+    }
+  }
+  &__btn {
+    height: 60px;
+    margin: 60px 0px 0px 0px;
+    width: 170px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid $secondary;
+    a {
+      color: $secondary !important;
+    }
+  }
+  .btn:hover {
+    background-color: $primary-light !important;
+  }
+}

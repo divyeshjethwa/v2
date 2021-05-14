@@ -1,0 +1,26 @@
+/*
+ * File: _theme.scss
+ * Project: v1
+ * File Created: Saturday, 1st February 2020 4:38:32 pm
+ * Author: Divyesh Jethwa
+ * -----
+ * Last Modified: Wednesday, 5th February 2020 5:33:11 pm
+ * Modified By: Divyesh Jethwa <divyesh.jeth@gmail.com>
+ * -----
+ */
+@import "./colors";
+@import "~@angular/material/theming";
+@include mat-core();
+
+$v1-blue: (
+  100: $primary,
+  contrast: (
+    50: $dark-primary-text,
+    100: $light-primary-text
+  )
+);
+
+$v1-primary: mat-palette($v1-blue, 100);
+$v1-accent: mat-palette($mat-green, A200, A100, A400);
+$v1-warn: mat-palette($mat-red);
+$v1-theme: mat-light-theme($v1-primary, $v1-accent, $v1-warn);
