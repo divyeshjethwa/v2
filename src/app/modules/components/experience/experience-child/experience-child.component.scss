@@ -1,0 +1,11 @@
+@import "../../../../../assets/styles/partials/colors";
+
+.container{
+    display: flex;
+    flex-direction: row;
+    ul>li:before {
+            color: $secondary;
+            content: "‣";
+            padding-right: 5px;
+        }
+}

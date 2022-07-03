@@ -1,0 +1,17 @@
+<section class="container hide-on-init">
+    <div class="tabs">
+        <div *ngFor="let tab of expData; let index = index">
+            <input type="radio"
+                   name="tabs"
+                   id="{{index}}"
+                   checked="checked">
+            <label for="tabone">{{tab.name}}</label>
+            <div class="tab">
+                <h1>{{tab.name}}</h1>
+                <p>{{tab.desc}}</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>

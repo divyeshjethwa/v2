@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss'],
+  selector: 'exp-child',
+  templateUrl: './experience-child.component.html',
+  styleUrls: ['./experience-child.component.scss'],
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceChildComponent implements OnInit {
+  @Input() exp: any;
   expData = [
     {
       name: 'CSG International',
@@ -25,5 +26,5 @@ export class ExperienceComponent implements OnInit {
   ];
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 }

@@ -1,1 +1,12 @@
-<div class="work-section"></div>
+<div class="work"
+     fxLayout="column"
+     fxLayoutAlign="start start">
+    <h3 class="work__title  hide-on-init"
+        animateOnScroll
+        animationName="animated fadeInUp delay-p25"><span>III.</span>&nbsp; Work</h3>
+
+    <div class="work-card"
+         *ngFor="let project of projectDetails; let index=index;">
+        <work-child [project]="project"></work-child>
+    </div>
+</div>

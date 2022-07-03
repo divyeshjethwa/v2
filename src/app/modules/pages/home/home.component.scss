@@ -3,6 +3,9 @@
   padding: 0px 15%;
   align-items: center;
 
+  display: block;
+    position: relative;
+    z-index: 3;
   &__content {
     width: 100%;
     padding: 125px 0px;

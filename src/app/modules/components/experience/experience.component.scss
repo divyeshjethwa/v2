@@ -1,6 +1,19 @@
 @import "../../../../assets/styles/partials/colors";
 
-.experience {
+.exp {
+  width: 100% !important;
+  
+    &__title {
+      span {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
+        color: $secondary;
+      }
+  
+      font-family: $calibre;
+      font-size: 20px;
+      color: $text;
+    }
   h1 {
     font-size: 60px;
     color: $text;

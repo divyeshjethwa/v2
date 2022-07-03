@@ -1,7 +1,26 @@
 @import "../../../../assets/styles/partials/colors";
 
-work-section {
-  height: 800px;
-  width: 100%;
-  background-color: $secondary;
+.work {
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+    &__title {
+      span {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
+        color: $secondary;
+      }
+  
+      font-family: $calibre;
+      font-size: 20px;
+      color: $text;
+    }
+  .work-card{
+    width: 22%;
+  }
+  .work-card:hover{
+    // transform: scale(2);
+  }
 }

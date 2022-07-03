@@ -19,6 +19,9 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { FlexModule, FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
+import { WorkChildComponent } from './modules/components/work/work-child/work-child.component';
+import { ExperienceChildComponent } from './modules/components/experience/experience-child/experience-child.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,8 @@ import { CommonModule } from '@angular/common';
     WorkComponent,
     HomeComponent,
     AppComponent,
+    WorkChildComponent,
+    ExperienceChildComponent,
   ],
   imports: [
     AnimateOnScrollModule.forRoot(),
@@ -45,6 +50,7 @@ import { CommonModule } from '@angular/common';
     FlexModule,
     CommonModule,
     FlexLayoutModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
