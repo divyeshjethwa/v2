@@ -32,6 +32,10 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    // window.onbeforeunload = function () {
+    //   window.scrollTo(0, 0);
+    // };
+
     $(window).scroll(function () {
       var scroll = $(window).scrollTop()!;
       if (scroll > 0) {

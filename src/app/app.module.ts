@@ -20,7 +20,6 @@ import { NgModule } from '@angular/core';
 import { FlexModule, FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
 import { WorkChildComponent } from './modules/components/work/work-child/work-child.component';
-import { ExperienceChildComponent } from './modules/components/experience/experience-child/experience-child.component';
 import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
@@ -34,7 +33,6 @@ import { MatTabsModule } from '@angular/material/tabs';
     HomeComponent,
     AppComponent,
     WorkChildComponent,
-    ExperienceChildComponent,
   ],
   imports: [
     AnimateOnScrollModule.forRoot(),
