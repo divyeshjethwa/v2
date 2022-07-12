@@ -4,7 +4,7 @@
  * File Created: Thursday, 6th February 2020 5:54:04 pm
  * Author: Divyesh Jethwa
  * -----
- * Last Modified: Tuesday, 12th July 2022 1:27:59 pm
+ * Last Modified: Tuesday, 12th July 2022 2:10:33 pm
  * Modified By: Divyesh Jethwa<divyesh.jeth@gmail.com>
  * -----
  */
@@ -80,13 +80,16 @@ export const workData = [
   {
     name: 'Personal portfolio',
     image: 'https://i.postimg.cc/k4DjjTmX/v2-landing.png',
-    description: 'A starry dark-orange themed minimalistic portfolio. ',
+    description: 'A starry dark themed minimalistic portfolio. ',
     skills: [
-      'https://i.postimg.cc/9F0GZ61S/angular.png',
-      'https://i.postimg.cc/P58YF1gQ/html5.png',
-      'https://i.postimg.cc/3w5mMd75/sass.png',
-      'https://i.postimg.cc/0NYm9P26/typescript.png',
-      'https://i.postimg.cc/3R3GRVdt/webpack.png',
+      { link: 'https://i.postimg.cc/9F0GZ61S/angular.png', name: 'Angular' },
+      { link: 'https://i.postimg.cc/P58YF1gQ/html5.png', name: 'HTML5' },
+      { link: 'https://i.postimg.cc/3w5mMd75/sass.png', name: 'Sass' },
+      {
+        link: 'https://i.postimg.cc/0NYm9P26/typescript.png',
+        name: 'Typescript',
+      },
+      { link: 'https://i.postimg.cc/3R3GRVdt/webpack.png', name: 'Webpack' },
     ],
   },
 ];

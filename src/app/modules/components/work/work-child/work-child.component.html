@@ -1,21 +1,22 @@
-<section class="card">
-
-     <div class="card-content">
-          <p class="title">{{project.name}}</p>
-          <p class="details">{{project.description}}</p>
-          <div class="skills">
-               <div class="skill"
-                    *ngFor="let skill of project.skills">
-                    <img src="{{skill}}"
-                         alt="{{project.image}}">
+<a href="https://libraverse.netlify.app/">
+     <section class="card">
+          <div class="card-content">
+               <p class="title">{{project.name}}</p>
+               <p class="details">{{project.description}}</p>
+               <div class="skills">
+                    <div class="skill"
+                         *ngFor="let skill of project.skills">
+                         <span class="tip">{{skill.name}}</span>
+                         <img src="{{skill.link}}"
+                              alt="{{project.image}}">
+                    </div>
                </div>
           </div>
-     </div>
 
 
-     <div class="snapshot">
-          <img src="{{project.image}}"
-               alt="{{project.image}}">
-     </div>
-
-</section>
+          <div class="snapshot">
+               <img src="{{project.image}}"
+                    alt="{{project.image}}">
+          </div>
+     </section>
+</a>
