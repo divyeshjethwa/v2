@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-compress": "ng build && gzipper c ./dist --include js,css,html --output-file-format [filename].[ext] ./dist-compressed/"
+    "build-compress": "ng build && gzipper c ./dist --include js,css,html --output-file-format [filename].[ext] ./dist-compressed/",
+    "build:stats": "ng build --stats-json"
   },
   "private": true,
   "dependencies": {
@@ -23,14 +24,14 @@
     "@angular/platform-browser": "~11.2.12",
     "@angular/platform-browser-dynamic": "~11.2.12",
     "@angular/router": "~11.2.12",
+    "gzipper": "~7.1.0",
     "hammerjs": "^2.0.8",
     "ng2-animate-on-scroll": "^2.2.1",
     "ngx-page-scroll": "^7.0.4",
     "ngx-page-scroll-core": "^7.0.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3",
-    "gzipper": "~7.1.0"
+    "zone.js": "~0.11.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.11",
@@ -50,6 +51,7 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }

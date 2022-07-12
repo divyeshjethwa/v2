@@ -1,26 +1,21 @@
-<section class="scene">
-     <div class="card">
-          <img class="face front"
-               src="{{project.image}}"
-               alt="Woopsie">
-          <div class="face back">
-               <p class="work-title">{{project.name}}</p>
-               <!-- <p class="work-desc">{{project.description}}</p> -->
+<section class="card">
+
+     <div class="card-content">
+          <p class="title">{{project.name}}</p>
+          <p class="details">{{project.description}}</p>
+          <div class="skills">
+               <div class="skill"
+                    *ngFor="let skill of project.skills">
+                    <img src="{{skill}}"
+                         alt="{{project.image}}">
+               </div>
           </div>
      </div>
 
-     <!-- <div class="skills">
-          <img class="skill"
-               src="{{project.image}}"
-               alt="Woopsie">
-          <img class="skill"
-               src="{{project.image}}"
-               alt="Woopsie">
-          <img class="skill"
-               src="{{project.image}}"
-               alt="Woopsie">
-          <img class="skill"
-               src="{{project.image}}"
-               alt="Woopsie">
-     </div> -->
+
+     <div class="snapshot">
+          <img src="{{project.image}}"
+               alt="{{project.image}}">
+     </div>
+
 </section>

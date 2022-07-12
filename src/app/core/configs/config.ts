@@ -4,7 +4,7 @@
  * File Created: Thursday, 6th February 2020 5:54:04 pm
  * Author: Divyesh Jethwa
  * -----
- * Last Modified: Wednesday, 6th July 2022 11:40:51 am
+ * Last Modified: Tuesday, 12th July 2022 1:27:59 pm
  * Modified By: Divyesh Jethwa<divyesh.jeth@gmail.com>
  * -----
  */
@@ -17,6 +17,43 @@ export const introData = {
     "I'm a software engineer based in Bangalore, India specializing in developing exceptional minimalistic, high-quality websites and applications.",
   getInTouch: 'Hire me',
 };
+
+export const expData = [
+  {
+    name: 'CSG International',
+    position: 'Software Engineer',
+    isClicked: true,
+    time: 'May 2020 - June 2022',
+    content: [
+      'Built and maintained a search engine with support for searching with various categories and subcategories.',
+      'Transformed UIs using Angular, RxJS and Storybook, decreasing development time and increasing the rate of delivery by 30%.',
+      'Focused on front-end development, providing mentorship and coaching to new joinees.',
+    ],
+  },
+  {
+    name: 'Altorum leren',
+    position: 'Web Developer',
+    isClicked: false,
+    time: 'Jan 2019 - Feb 2020',
+    content: [
+      'Developed a highly interactive and responsive application using React and RxJS.',
+      'Teamed up with peers to redesign a clean API that offered increased flexibility and integrated APIs with the front-end.',
+      'Took the challenge of implementing voice and video call in the application using Twilio. ',
+      'Drafted documentation delineating designs and specs for more than 6 projects.',
+    ],
+  },
+  {
+    name: 'Mystro',
+    position: 'Application Development Intern',
+    time: 'Jul 2018 - Dec 2018',
+    isClicked: false,
+    content: [
+      'Worked with 5 other interns under the supervision of senior software engineer full stack development of the e-commerce system.',
+      'Received coaching and support from peers and senior software engineers, and gained practical experience using Java and Python.',
+      'Developed a PDF file generator by reading data from JSON files and creating word documents using JAVA and Apache POI Lib. Implemented using the Collections framework.',
+    ],
+  },
+];
 
 export const aboutmeData = {
   p1: " Hello! I'm Divyesh, a software engineer based in Bangalore, India who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.",
@@ -32,24 +69,25 @@ export const aboutmeData = {
   ],
 };
 
+// 'https://i.postimg.cc/9F0GZ61S/angular.png',
+// 'https://i.postimg.cc/P58YF1gQ/html5.png',
+// 'https://i.postimg.cc/Fs60ZTBK/nodejs.png',
+// 'https://i.postimg.cc/3w5mMd75/sass.png',
+// 'https://i.postimg.cc/0NYm9P26/typescript.png',
+// 'https://i.postimg.cc/3R3GRVdt/webpack.png',
+
 export const workData = [
   {
-    name: 'Project',
-    image: 'https://picsum.photos/300/200.jpg',
-    description:
-      'Velit exercitation esse et reprehenderit in incididunt exercitation ut id aliquip. Et ullamco id cupidatat nulla enim sunt et laboris eiusmod proident labore velit. Ea est nostrud mollit proident nostrud magna sit exercitation ea consequat consectetur. Labore incididunt excepteur aliquip id mollit minim voluptate nisi anim laboris.',
-  },
-  {
-    name: 'Project',
-    image: 'https://picsum.photos/300/200.jpg',
-    description:
-      'Velit exercitation esse et reprehenderit in incididunt exercitation ut id aliquip. Et ullamco id cupidatat nulla enim sunt et laboris eiusmod proident labore velit. Ea est nostrud mollit proident nostrud magna sit exercitation ea consequat consectetur. Labore incididunt excepteur aliquip id mollit minim voluptate nisi anim laboris.',
-  },
-  {
-    name: 'Project',
-    image: 'https://picsum.photos/300/200.jpg',
-    description:
-      'Velit exercitation esse et reprehenderit in incididunt exercitation ut id aliquip. Et ullamco id cupidatat nulla enim sunt et laboris eiusmod proident labore velit. Ea est nostrud mollit proident nostrud magna sit exercitation ea consequat consectetur. Labore incididunt excepteur aliquip id mollit minim voluptate nisi anim laboris.',
+    name: 'Personal portfolio',
+    image: 'https://i.postimg.cc/k4DjjTmX/v2-landing.png',
+    description: 'A starry dark-orange themed minimalistic portfolio. ',
+    skills: [
+      'https://i.postimg.cc/9F0GZ61S/angular.png',
+      'https://i.postimg.cc/P58YF1gQ/html5.png',
+      'https://i.postimg.cc/3w5mMd75/sass.png',
+      'https://i.postimg.cc/0NYm9P26/typescript.png',
+      'https://i.postimg.cc/3R3GRVdt/webpack.png',
+    ],
   },
 ];
 
@@ -65,6 +103,7 @@ export enum Direction {
   Up = 'Up',
   Down = 'Down',
 }
+
 export enum VisibilityState {
   Visible = 'visible',
   Hidden = 'hidden',
