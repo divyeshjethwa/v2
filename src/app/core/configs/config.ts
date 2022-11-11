@@ -4,7 +4,7 @@
  * File Created: Thursday, 6th February 2020 5:54:04 pm
  * Author: Divyesh Jethwa
  * -----
- * Last Modified: Friday, 11th November 2022 9:42:11 am
+ * Last Modified: Friday, 11th November 2022 9:50:39 am
  * Modified By: Divyesh Jethwa<divyesh.jeth@gmail.com>
  * -----
  */
@@ -20,9 +20,21 @@ export const introData = {
 
 export const expData = [
   {
+    name: 'Recreate App',
+    position: 'UI Developer',
+    isClicked: true,
+    time: 'July 2022 - Present',
+    content: [
+      'Build responsive user interfaces.',
+      'Write clean, commented code.',
+      'Optimize app for modularity and speed.',
+      'Estimate tasks and stick with self-imposed deadlines.',
+    ],
+  },
+  {
     name: 'CSG International',
     position: 'Software Engineer',
-    isClicked: true,
+    isClicked: false,
     time: 'May 2020 - June 2022',
     content: [
       'Built and maintained a search engine with support for searching with various categories and subcategories.',
@@ -57,7 +69,7 @@ export const expData = [
 
 export const aboutmeData = {
   p1: " Hello! I'm Divyesh, a software engineer based in Bangalore, India who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.",
-  p2: 'Currently, I work with the engineering team at CSG International Telecomm where I analyzie UI designs and delineate them to create pixel perfect dynamic resuable components.',
+  p2: 'Currently, I work with the engineering team at Recreate App where I analyzie UI designs and delineate them to create pixel perfect dynamic resuable components.',
   p3: "Here are a few technologies I've been working with recently:",
   skills: [
     'JavaScript (ES6+)',
