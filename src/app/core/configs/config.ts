@@ -106,6 +106,22 @@ export const workData = [
     ],
   },
   {
+    name: 'GPT3 Website',
+    hosting_link: 'https://react-gpt3-example.netlify.app/',
+    image: 'https://i.postimg.cc/ZKm6fKm5/Screenshot-2023-01-05-at-3-22-25-PM.png',
+    description: 'Website built using React showcasing Open AIs GPT3 and its possibilities.',
+    skills: [
+      { link: 'https://i.postimg.cc/Px60SFpt/react-1-logo-png-transparent.png', name: 'React' },
+      { link: 'https://i.postimg.cc/P58YF1gQ/html5.png', name: 'HTML5' },
+      { link: 'https://i.postimg.cc/3w5mMd75/sass.png', name: 'Sass' },
+      {
+        link: 'https://i.postimg.cc/0NYm9P26/typescript.png',
+        name: 'Typescript',
+      },
+      { link: 'https://i.postimg.cc/3R3GRVdt/webpack.png', name: 'Webpack' },
+    ],
+  },
+  {
     name: 'NG Currencies demo with API',
     hosting_link: 'https://ng-currencies.netlify.app/',
     image: 'https://i.postimg.cc/q7gj9HLg/full.png',
